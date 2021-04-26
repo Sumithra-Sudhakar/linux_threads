@@ -24,7 +24,7 @@ int main(void) {
 
     pthread_create(&tid, NULL, hello, "hello world"); //passing a string as the last argument in the create function indicating that it is the parameter of the function jello
 
-    pthread_join(tid, NULL); //joining the thread
+    pthread_join(tid, NULL); //joining the thread that was created
 
     return 0; 
 
